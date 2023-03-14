@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_1.Vistas.CalculadoraPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#606C38">
+            <Frame BackgroundColor="#FEFAE0" CornerRadius="10" Margin="10">
+                <Image Source="https://web.ucenm.net/wp-content/uploads/2019/09/Logo-UCENM-Estilizado.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Scale="1" Aspect="AspectFit"/>
+            </Frame>
+            <Frame BackgroundColor="#FEFAE0" Margin="10" CornerRadius="10">
+                <StackLayout>
+                    <Label Text="Primer Numero:" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black" FontAttributes="Bold"/>
+                    <Entry x:Name="PrimerNumero" Placeholder=" " Keyboard="Numeric"  FontSize="30" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Segundo Numero:" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="SegundoNumero" Placeholder=" " Keyboard="Numeric"  FontSize="30" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Resultado:" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="ResultadoFinal" Placeholder=" " Keyboard="Numeric"  FontSize="30" PlaceholderColor="Black" BackgroundColor="#DDA15E" IsReadOnly="True" />
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#FEFAE0" Padding="10" Margin="10" CornerRadius="10">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Text="Sumar" Clicked="Sumar" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="170" />
+                            <Button Text="Restar" Clicked="Restar" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="170" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Text="Multiplicar" Clicked="Multiplicar" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="170" />
+                            <Button Text="Dividir" Clicked="Dividir" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="170" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Text="limpiar" Clicked="Limpiar" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="170" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
